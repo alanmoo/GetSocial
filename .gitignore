@@ -33,6 +33,7 @@ var/
 # Installer logs
 pip-log.txt
 pip-delete-this-directory.txt
+*.log
 
 # Unit test / coverage reports
 htmlcov/
@@ -68,4 +69,8 @@ target/
 Vagrantfile
 bootstrap.sh
 .vagrant
+
+#Node
 node_modules
+public/js/bundle.js
+
