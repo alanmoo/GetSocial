@@ -68,3 +68,4 @@ target/
 Vagrantfile
 bootstrap.sh
 .vagrant
+node_modules
