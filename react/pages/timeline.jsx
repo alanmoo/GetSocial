@@ -1,24 +1,26 @@
 var React = require('react');
+var MiniStory = require('../components/MiniStory.jsx');
 
 var Timeline = React.createClass({
-  getDefaultProps: function(){
+  getDefaultProps: function() {
     return {
       data: 'foo'
     };
   },
-  getInitialState: function(){
-    return{
+  getInitialState: function() {
+    return {
       currentStoryIndex: 0
     };
   },
-  componentWillMount: function(){
-   //Make an AJAX call
-   this.AjaxResponse = 'foo'
-
+  componentWillMount: function() {
+    //Make an AJAX call
+    this.AjaxResponse = 'foo';
   },
-  render: function(){
-    return(
-      <div>Hello, world! {this.AjaxResponse} {this.props.data} {this.state.currentStoryIndex}</div>
+  render: function() {
+    return (
+      <div>
+          <MiniStory />
+      </div>
     );
   }
 });
